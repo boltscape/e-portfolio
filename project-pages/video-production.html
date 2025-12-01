@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production Project</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Project Content -->
+    <section class="image-editing">
+        <h1 class="hidden animate-on-load" data-animation="animate-fadeIn">Video Production</h1>
+        
+        <h2 class="hidden animate-on-load" data-animation="animate-backInUp">About the Project</h2>
+        <div class="image-container"> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gIWMDfJf_7M?si=ULR0znX29V4PAbV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                In my educational video regarding common cat breeds, I aimed to create an engaging and informative visual guide exploring the characteristics of four distinct feline types. To achieve this, I sourced 18 high-resolution still images to serve as the visual foundation. To bring these static images to life and add movement, I incorporated specific motion effects, utilizing Slow Zoom In and Slow Zoom Out to focus on key physical traits. I also applied a Spin effect in a specific section where I felt it was narratively appropriate to add a unique visual flair.
+            </p>
+    
+            <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                To ensure a seamless viewing experience, I chose the Cross Fade transition between all image clips. This created a smooth, consistent flow as the video progressed from one breed to the next, avoiding abrupt cuts that might distract the viewer.
+            </p>
+    
+            <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                I recorded a voiceover narration to explain the specific traits of each breed. To enhance the atmosphere, I added background music, "Dance of the Sugar Plum Fairy" by Kevin MacLeod. I carefully managed the audio mix by lowering the music volume to 10% using the Audio panel. This ensured the music provided a pleasant backdrop without overpowering my narration, making the information easy to digest.
+            </p>
+                
+                
+            <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                I also included text captions to clearly identify the video title and the specific names of the breeds as they appeared, as well as to display credits. This combination of sourced media, precise audio editing, and visual effects was designed to create a polished and educational video that effectively communicates the unique qualities of these common cat breeds.
+            </p>
+                          
+        </div>
+            
+    </section>
+
+    <footer class="footer">
+        <p> © 2025 Kaiser Shaik. All rights reserved.</p>
+        <br>
+        <p>
+            <a href="http://education.ufl.edu/educational-technology/" target="_blank" rel="noopener noreferrer">
+               University of Florida’s Educational Technology website
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        // Run when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.animate-on-load');
+            elements.forEach(el => {
+                el.classList.remove('hidden');
+                el.classList.add(el.dataset.animation);
+            });
+        });
+    </script>
+
+</body>
+</html>

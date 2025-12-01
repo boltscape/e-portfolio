@@ -1,0 +1,343 @@
+/* General Reset */
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #121212; /* Black background */
+    color: #b2b2b2; /* White text */
+}
+
+/* Navigation Bar Styling */
+nav {
+    width: 100%;
+    background-color: #1D1D1D; /* Black background for nav */
+    position: sticky; /* Make nav sticky */
+    top: 0; /* Stick to the top of the page */
+    z-index: 1; /* Ensure it stays above other content */
+    padding: 20px 0; /* Add some padding to make the nav bar taller */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b2b2b2; /* White links */
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    transform: scale(1.1);
+}
+
+/* Profile Image Styling */
+.profile-img {
+    margin-left: auto;
+  margin-right: auto;
+    width: 250px; /* Adjust the size as needed */
+    height: 250px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle */
+    margin-bottom: 30px; /* Adds space between the image and the name */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for a 3D effect */
+}
+
+/* Intro Section Styling (Full Page) */
+.intro {
+    text-align: center;
+    height: 100vh; /* Full viewport height for intro section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.intro h1 {
+    font-size: 6rem; /* Large heading */
+    padding-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem; /* Slightly larger font for paragraph */
+    margin-top: 20px;
+    width: clamp(0px, 95vw, 1200px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Projects Section Styling (Full Page) */
+.projects-section {
+    height: 100vh; /* Full viewport height for projects section */
+    padding-top: 60px; /* Space for heading */
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px 0px
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px; /* Space between project cards */
+    padding-top: 3%;
+}
+
+
+/* Updated Project Card Styling */
+.project-card {
+    background-color: #1D1D1D;
+    color: #b2b2b2; /* Black text inside cards */
+    width: 350px; /* Increased width to fit more content */
+    height: 250px; /* Allow height to expand based on content */
+    border-radius: 20px; /* Rounded corners */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 20px;
+
+    /* box-shadow: 5px 10px 20px rgb(255 255 255 / 15%); */
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.project-card h3 {
+    font-size: 1.2rem;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    margin-top: 10px;
+    text-align: justify;
+    color: #b2b2b2;
+}
+
+/* Learn More Button Styling */
+.learn-more {
+    background-color: #b2b2b2; /* White button background */
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background-color: #9c9c9c; /* Slightly lighter on hover */
+}
+
+
+/* Intro Section Styling (Full Page) */
+.image-editing {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.image-editing h1 {
+    font-size: 3rem; /* Large heading */
+    /* padding-bottom: 20px; */
+    padding-top: 20px;
+}
+
+.image-editing h2 {
+    margin-top: 10px;
+    font-size: 1.5rem; /* Large heading */
+    padding-bottom: 10px;
+}
+
+.image-editing h3 {
+    margin-top: 30px;
+    font-size: 1.1rem; /* Large heading */
+    /* width: clamp(0px, 95vw, 1200px); */
+}
+
+.image-editing p {
+    font-size: 1.1rem; /* Slightly larger font for paragraph */
+    /* width: clamp(0px, 95vw, 1200px); */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.image-editing ul {
+    margin: 5px;
+    text-align: left;
+}
+
+.image-editing li {
+padding-bottom: 5px;
+}
+
+
+.image-editing iframe {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+/* ANIMATIONS */
+
+.intro h1 {    
+    /* Animation for name coming together from sides */
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.projects-section {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.project-card h3,p,button{
+    transform: translateY(20px);
+    opacity: 0;
+    animation: backInUp 2s forwards;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 2s forwards;
+}
+
+.animate-backInUp {
+    animation: backInUp 3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Paragraph Animation */
+.intro p {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: backInUp 2s forwards;
+}
+
+.image-editing p iframe h2{
+    transform: translateY(20px);
+    opacity: 0;
+    animation: backInUp 2s forwards;
+}
+
+@keyframes backInUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+/* Contact Section Styling */
+.contact-section {
+    padding: 50px 0; /* Add padding to top and bottom */
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Contact Links Styling */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between contact items */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #b2b2b2; /* White text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact-item:hover {
+    color: #ccc; /* Lighter color on hover */
+}
+
+.icon {
+    width: 30px; /* Icon size */
+    height: auto;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+
+.image-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: #1D1D1D;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #1D1D1D;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.footer a{
+    color: #b2b2b2;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Animation Project</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Project Content -->
+    <section class="image-editing">
+        <h1 class="hidden animate-on-load" data-animation="animate-fadeIn">Digital Animation</h1>
+
+        <h2 class="hidden animate-on-load" data-animation="animate-backInUp">About the Project</h2>
+
+        <div class="image-container"> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yeMzrOiXqAc?si=tJPIdJK8_Wen9Bfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="hidden animate-on-load" data-animation="animate-fadeIn">For the digital animation project, I chose to create a video explaining the science behind a cat's night vision, focusing specifically on the tapetum lucidum. I gained significant educational value and practical insight into multimedia production through this assignment. This project provided an excellent opportunity to synthesize multiple skills, including vector asset management, motion planning, and audio synchronization, which are crucial for conveying biological concepts in a visually engaging way. From an educational standpoint, creating an animated scientific explanation reinforced my understanding of communicating processes such as light reflection through visual media. The exercise emphasized how combining specific diagrams with motion can make learning more dynamic and effective. </p>
+    
+            <br>
+    
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                The process of creating the animation required detailed planning and careful execution. I began by organizing my workspace, placing the vector illustration of the cat and the cross-section of the eye on separate tracks to ensure I could manipulate them independently. A major focus was the transition between these two states; I utilized a zoom transition to create a shift in perspective, moving from the macro view of the cat's face to the micro view of the internal eye structure. This helped me understand the importance of continuity and visual hierarchy in animation.
+               </p> 
+            
+               <br>
+    
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                However, there were challenges during the project. One of the primary difficulties was achieving a realistic representation of the light physics. Using motion tweens to animate the light ray required precise pathing to ensure the ray entered the pupil, hit the back of the eye, and reflected out at the correct angle. Another limitation was ensuring the text labels appeared at the exact moment the viewer needed to identify the anatomy, requiring careful timeline management.
+               </p>
+               
+               <br>
+    
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                Overall, this project emphasized the importance of blending technical animation skills with creative storytelling to produce educational content that is both informative and clear. It highlighted the intricacies of visualizing scientific phenomena, which is valuable for future endeavors in instructional design and content creation.
+               </p>
+               
+               <br>
+    
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                Here is how I tackled this project:
+               </p>
+    
+               <br>
+    
+               
+                <h2 class="hidden animate-on-load" data-animation="animate-fadeIn">Animation Creation:</h2>
+    
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                Visual Assets: I assembled high-quality visual assets, including a vector illustration of a cat's face and a scientific cross-section of an eyeball. To maintain organization and control, I placed these elements on separate tracks within the timeline.
+               </p>
+    
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                Scene Setup: I designed the opening scene featuring the cat illustration set against a plain white background to keep the focus on the subject matter.
+               </p>
+                
+               <br>
+    
+                <h2 class="hidden animate-on-load" data-animation="animate-fadeIn">Animation Techniques:</h2>
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                Transitions: To bridge the gap between the external view of the cat and the internal anatomy, I implemented a quick zoom transition. I shrunk the cat face asset while simultaneously zooming in on the eye diagram, creating a seamless dive into the subject.
+               </p>
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                Motion Tweening: To illustrate the scientific process, I used motion tweening to animate a simple line representing a light ray. I controlled its path to show it entering the eye, striking the tapetum lucidum, and reflecting back out, visually explaining the "glow" effect.
+               </p>
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                Labeling: I added synchronized text labels for "Cat's Eye" and "Tapetum lucidum" to identify key anatomical parts as they appeared on screen.
+               </p>
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                Transitions and Effects: To add visual interest, I used transition effects, such as fade-in and fade-out, for seamless object entry and exit.
+               </p>
+                
+               <br>
+    
+                <h2 class="hidden animate-on-load" data-animation="animate-fadeIn">
+                    Final Video Production:
+                </h2>
+        
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                Video Editing: After exporting the animation, I imported it into Clipchamp to add a title card and an ending card. I incorporated transition effects and minimal text for context.
+               </p>
+    
+               <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                Audio Integration: Finally, I utilized Clipchamp to record and integrate a voice-over. This narrative layer explained the function of the reflective layer and the science behind the visual action, ensuring the educational message was clear and comprehensive.
+                </p>    
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p> © 2025 Kaiser Shaik. All rights reserved.</p>
+        <br>
+        <p>
+            <a href="http://education.ufl.edu/educational-technology/" target="_blank" rel="noopener noreferrer">
+               University of Florida’s Educational Technology website
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        // Run when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.animate-on-load');
+            elements.forEach(el => {
+                el.classList.remove('hidden');
+                el.classList.add(el.dataset.animation);
+            });
+        });
+    </script>
+
+</body>
+</html>

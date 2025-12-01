@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editing Project</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Project Content -->
+    <section class="image-editing">
+        <h1 class="hidden animate-on-load" data-animation="animate-fadeIn">Image Editing</h1>
+
+        <div class="image-container">
+
+            <h2 class="hidden animate-on-load" data-animation="animate-backInUp">Book Cover - Until The End of Time</h2>
+            <img src="../image-resources/book_cover.png" style="width: 500px; padding: 20px;" class="hidden center animate-backInUp">
+            <!-- <p class="hidden animate-on-load" data-animation="animate-fadeIn">I chose to recreate the book cover for The Lion, The Witch, and The Wardrobe by C.S. Lewis, a story that revolves around the battle between good and evil. The main characters representing this conflict are the lion, Aslan, and the White Witch, so I decided to make them the focal points of my cover design. To emphasize their roles, I chose orange hues for the lion to represent warmth and good, while using blue tones for the witch, representing her association with ice and cold.</p> -->
+    
+            <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                For this project, I designed a book cover in Canva for
+                Until The End of Time by Brain Greene, one of the most enjoyably thought-provoking
+                books I've read in my whole life. My design aims to capture the overarching theme
+                through the book, i.e the progression of the universe from its beginning to its end and
+                also reference the shifting perspective narrative that the author uses in his exploration of
+                the universe's journey
+            </p>
+            <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                The hourglass is a very direct allusion to the passage of time within the universe, with the top half of the hourglass containing larger and brighter galaxies while the bottom half contains fewer and brighter galaxies and more black holes. However, in the book, Greene switches disciplines of science at each level of the universe, converging from physics to explain the motion of galaxies to chemistry to explaining the motion of atoms. I've sought to embody that within the converging shape of the hourglass as well.
+            </p>
+            <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                I considered making the entire cover contain galaxies for aesthetics but decided against it for the contrast that the cosmic hourglass against a stark black background would bring. I adjusted the brightness, black and white balances, and shadows on the hourglass to make the galaxies in the top half look starker and livelier and the ones in the bottom half dim and dull.
+            </p>
+            <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                For the typography, used Playfair Display for the book title, a Display design font well suited for headings. Since it pairs well with Georgia for body text, I used it for the author's name and the hook text.
+
+            </p>
+        </div>
+        
+        <br>
+
+        <div class="image-container">
+            <h2 class="hidden animate-on-load" data-animation="animate-backInUp">Logo - Purr and Brew</h2>
+            <img src="../image-resources/Logo.png" style="width: 400px; padding: 20px;" class="hidden center animate-backInUp">
+    
+            <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                For this project, I aimed to design a logo for a fictional cat café, "Purr & Brew," blending my affection for coffee and cats. I drink a lot of coffee, and I love cats, so it needed to capture that cozy vibe in a minimalist way.
+              </p>
+              <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                To construct the cat icon, I primarily used Illustrator’s ellipse tool for the head and eyes, and the polygon tool for the ears. The subtle features were created with the pen tool. For the coffee cup, I utilized the rectangle tool for the body, the ellipse tool for the rim, and again the pen tool for the handle and steam. These basic shapes were then carefully arranged to depict a cat peeking out of a steaming mug, effectively conveying both aspects of the café in a unified image.
+              </p>
+              <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                The text was added using the type tool. I selected a clean sans-serif font, setting "PURR & BREW" in a bolder weight to ensure it stood out as the primary identifier, with "Coffee & Feline Comfort" below in a lighter weight for clear hierarchy. All elements were contained within a unifying circle, drawn with the ellipse tool, creating a balanced and cohesive composition.
+              </p>
+              <p class="hidden animate-on-load" data-animation="animate-fadeIn">
+                My color choice was a simple off-white against a charcoal background. This minimalist palette was a deliberate decision to maintain a modern, clean aesthetic and ensure high contrast for readability.
+              </p>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <p> © 2025 Kaiser Shaik. All rights reserved.</p>
+        <br>
+        <p>
+            <a href="http://education.ufl.edu/educational-technology/" target="_blank" rel="noopener noreferrer">
+               University of Florida’s Educational Technology website
+            </a>
+        </p>
+    </footer>
+    <script>
+        // Run when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.animate-on-load');
+            elements.forEach(el => {
+                el.classList.remove('hidden');
+                el.classList.add(el.dataset.animation);
+            });
+        });
+    </script>
+
+</body>
+</html>
